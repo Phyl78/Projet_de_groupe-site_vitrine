@@ -1,0 +1,17 @@
+.categories 
+{
+    grid-template-columns: 20px 60px 20px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    
+    "entête entête entête"
+    "menu1 plat1 prix1"
+    "menu2 plat2 prix2"
+    "menu3 plat3 prix3"
+                         
+}
+
+.entête
+{
+    grid-area: menu 1;
+}
