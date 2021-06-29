@@ -1,60 +1,69 @@
 
 
+body
+{
 
+margin: 0;
+padding: 0;
+background: rgb(231, 131, 151);
 
-
-
-
-
-ul {
-
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    font-size: 30px;
-    background-color: rgb(0, 0, 0); 
-    font-family: 'Dancing Script', cursive;
-
-  }
-
-
-  li {
-      
-    display: inline;
-    text-align: center;
-    padding: 50px 30px;
-     
-  }
-  
-
-  li a {
-   
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-
-  }
-
-
-
-  li a:hover {
-
-    background-color: rgb(61, 60, 60);
-    
-  }
-   
-
-
-
-.search{
-
-    
-    
-    text-align: center;
-    width: 300px;
-    margin: -50px;
-    padding: 14px;
-        
 }
- 
 
+.search-box
+{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(56, 59, 59);
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+
+}
+.search-box:hover > .search-txt{
+
+  width: 240px;
+  padding: 0 6px;
+
+}
+
+
+
+.search-box:hover > .search-btn{
+
+ background: white;
+}
+
+.search-btn{
+
+color: #e84118;
+float: right;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #2f3640;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0,4;
+
+
+}
+
+
+.search-txt{
+
+border: none;
+background: none;
+outline: none;
+float: left;
+padding: 0;
+color: white;
+font-size: 16px;
+transition: 0.4s;
+line-height: 40px;
+width: 0px;
+
+}
