@@ -1,8 +1,6 @@
 body{
 
-  background-color: rgb(166, 43, 68);
-  font-family: 'Benne', serif;
-  font-size: 25px;
+ 
   
 
 }
@@ -14,8 +12,11 @@ body{
 .grid-container {
   display: grid;
   grid-template-columns: 33.33% 33.33%  33.33% ;
-  grid-template-rows: 80px ;
+  grid-template-rows: 180px ;
   padding: 10px;
+
+  background-color: rgb(166, 43, 68);
+  
 }
 
 
@@ -23,7 +24,8 @@ body{
 
   background-image: url("https://i.imgur.com/aQ2ZL0C.png");
   background-repeat: no-repeat;
-  background-size: 100px 80px;
+  background-size: 200px 160px;
+  
 
 }
 
@@ -32,9 +34,10 @@ body{
 
 .grid-item2{
 
- padding-top: 25px;
+ padding-top: 0%;
  transform: translate(-50% -50%);
-
+ display: flex;
+justify-content: center;
 
  
 }
@@ -50,9 +53,9 @@ padding: 0px 10px;
 }
 
 
-.btn{
+.grid-item2 .material-icons{
 
-
+  
   right: 10%;
   font-size: 17px;
   cursor: pointer;
@@ -80,16 +83,24 @@ padding: 0px 10px;
 
 .column{
 
-float: left;
-width: auto;
+float: right;
+margin-left: 0%;
+width: 40px;
 padding: 5px;
 
 }
 
 
 
+.column2{
 
-
+  float: right;
+ 
+  width: 40px;
+  padding: 5px;
+  
+  }
+  
 
 
 
@@ -97,10 +108,17 @@ padding: 5px;
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 50px;
   overflow: hidden;
   background-color: rgb(166, 43, 68);
-  margin-top: 10px;
+  margin-top: -160px;
+  
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Benne', serif;
+  font-size: 25px;
+  
 }
 
 li {
