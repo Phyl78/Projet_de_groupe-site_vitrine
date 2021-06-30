@@ -1,0 +1,29 @@
+.actu{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 20px;
+    grid-template-areas: "gauche droite";
+    height: 300px;
+    
+   justify-items: end;
+}
+.gauche{
+    grid-column: 1;
+    grid-row: 1;
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 80%;
+background-image: url(https://www.gastronomie-et-traditions.fr/wp-content/uploads/2020/10/Gastronomie2.jpg);
+}
+.droite{
+
+grid-column: 2;
+grid-row: 1;
+border: 0px solid black;
+    border-radius: 10px;
+    width: 80%;
+    font-weight: bold;
+    
+}
+    
+
