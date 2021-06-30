@@ -1,6 +1,5 @@
 body{
 
- 
   
 
 }
@@ -16,7 +15,7 @@ body{
   padding: 10px;
 
   background-color: rgb(166, 43, 68);
-  
+ 
 }
 
 
@@ -26,7 +25,7 @@ body{
   background-repeat: no-repeat;
   background-size: 200px 160px;
   
-
+  
 }
 
 
@@ -110,7 +109,7 @@ ul {
   margin: 0;
   padding: 50px;
   overflow: hidden;
-  background-color: rgb(166, 43, 68);
+  
   margin-top: -160px;
   
   display: flex;
@@ -118,6 +117,9 @@ ul {
 
   font-family: 'Benne', serif;
   font-size: 25px;
+
+  
+  
   
 }
 
@@ -136,3 +138,162 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+
+ 
+
+  .grid-container{
+
+    display: grid;
+    grid-template-columns: 10% 60%  30% ;
+    grid-template-rows: 180px  ;
+    padding: 10px;
+  
+    background-color: rgb(166, 43, 68);
+
+  }
+
+
+
+
+
+
+
+  .grid-item1{
+
+    background-image: url("https://i.imgur.com/aQ2ZL0C.png");
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+    
+    
+  }
+  
+
+
+
+
+
+
+  .grid-item2{
+
+    padding-top: 20%;
+    transform: translate(-50% -50%);
+    display: flex;
+   justify-content: center;
+   
+    
+   }
+
+   input{
+
+    border: 3px solid rgb(0, 0, 0); 
+    height: 20px;
+    width: 80px;
+    border-radius: 50px;
+    padding: 0px 10px;
+    }
+    
+    
+    .grid-item2 .material-icons{
+    
+      
+      right: 10%;
+      font-size: 17px;
+      cursor: pointer;
+    
+    }
+
+
+
+
+    
+
+
+
+    .grid-item3::after{
+
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-size: 20px 15px;
+    
+      content: "";
+      display: table;
+      clear: both;
+    
+    
+    }
+    
+    
+    .column{
+    
+    float: right;
+    margin-left: 0%;
+    width: 40px;
+    padding: 5px;
+    
+    }
+    
+    
+    
+    .column2{
+    
+      float: right;
+     
+      width: 40px;
+      padding: 5px;
+      
+      }
+      
+    
+    
+    
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 50px;
+      overflow: hidden;
+      
+      margin-top: -160px;
+      
+      display: flex;
+      justify-content: center;
+    
+      font-family: 'Benne', serif;
+      font-size: 25px;
+    
+      
+      
+      
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+
+
+
+
+
+}
+ 
