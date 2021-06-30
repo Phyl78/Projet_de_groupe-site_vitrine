@@ -1,6 +1,9 @@
 body{
 
   background-color: rgb(166, 43, 68);
+  font-family: 'Benne', serif;
+  font-size: 25px;
+  
 
 }
 
@@ -11,7 +14,7 @@ body{
 .grid-container {
   display: grid;
   grid-template-columns: 33.33% 33.33%  33.33% ;
-  grid-template-rows: 50px ;
+  grid-template-rows: 80px ;
   padding: 10px;
 }
 
@@ -87,13 +90,17 @@ padding: 5px;
 
 
 
+
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(166, 43, 68);
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 li {
