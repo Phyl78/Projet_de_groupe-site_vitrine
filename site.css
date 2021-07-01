@@ -4,7 +4,7 @@ body{
     
 }
 
-
+/* Affiche un grid DIV principale qui contient DEUX div, un a droite et un a gauche*/
 .grid{
 
 background-color: cadetblue;
@@ -19,7 +19,7 @@ column-gap: 10px;
 
 }
 
-
+/* regle la taille de l'image a partir de width dans grid */
 .logo{
 
 /* background-color: aqua; */
@@ -27,12 +27,15 @@ width: 100%;
 
 }
 
+/* regle la taille de l'image a partir de width dans logo qui lui meme se regle a partir de width dans grid */
 .logo img{
 
 width: 40%;
     
 }
 
+
+/* affiche le grid disposé a droite */
 .parentDrapeauListeContact{
 
 
@@ -47,18 +50,18 @@ row-gap: 50px;
 
 }
 
-
+/* regle la dsposition de la barre de recherche */
 .barreDeRecherche{
 
     /* background-color: rgb(17, 0, 255); */
     display: flex;
     justify-content: center;
-   
-   
 
+      
 
 }
 
+/* rentre dans input pour regle la taille de la barre de recherche */
 .parentDrapeauListeContact .barreDeRecherche input{
 
 
@@ -66,6 +69,7 @@ row-gap: 50px;
 }
 
 
+/* regle la disposition des drapeau */
 .drapeau{
 
     /* background-color: rgb(234, 0, 255); */
@@ -76,6 +80,7 @@ row-gap: 50px;
 
 }
 
+/* permet l'affichage des drapeaux en ligne */
 .drapeau li{
 
 list-style: none;
@@ -84,6 +89,7 @@ display: inline
 }
 
 
+/* affiche le menu au centre */
 .menuNav{
 
     /* background-color: rgba(182, 160, 63, 0.801); */
@@ -92,6 +98,8 @@ display: inline
 
 }
 
+
+/* enleve les trait qui soulignent les mots dans le menu, permet d'aligné la liste  et permet d'espacé les mots*/
 .parentDrapeauListeContact .menuNav ul li{
 
 
@@ -102,6 +110,8 @@ display: inline
 
 }
 
+
+/* enleve les tirets des balises ppour chaque a */
 .parentDrapeauListeContact .menuNav ul li a{
 
 
@@ -109,6 +119,8 @@ display: inline
 
 }
 
+
+/* permet d'ajouter une fonction surligner les boutons au passages de la souris */
 .parentDrapeauListeContact .menuNav ul li a:hover {
 
     background-color: gold;
@@ -116,7 +128,7 @@ display: inline
 }
 
 
-
+/* permet de faire disparaitre le menu pour l'icone menu burger */
 .parentDrapeauListeContact .menuNav ul li a img{
 
     visibility: hidden;
@@ -125,6 +137,7 @@ display: inline
 
 }
 
+/* permet de regler la position de l'icone contact */
 .iconContact{
 
     /* background-color: rgb(187, 255, 0); */
@@ -144,12 +157,12 @@ display: inline
 
 
 
-
+/* permet d'afficher une version portable du site internet */
 @media screen and ( max-width:600px){
 
 
     
-
+/* Affiche un grid DIV principale qui contient DEUX div, un a droite et un a gauche*/
     .grid{
 
         /* background-color: rgb(5, 3, 5); */
@@ -159,14 +172,12 @@ display: inline
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 150px;
-        grid-template-areas: "a b c"
-                             "d e f";
         column-gap: 10px;
         
         
         }
         
-        
+        /* regle la taille de l'image a partir de width dans grid */
         .logo{
         
             display: flex;
@@ -176,7 +187,7 @@ display: inline
         
         }
         
-        
+        /* regle la taille de l'image a partir de width dans logo qui lui meme se regle a partir de width dans grid */
         .logo img{
 
             
@@ -187,7 +198,7 @@ display: inline
         }
 
 
-
+        /* affiche le grid disposé a droite */
         .parentDrapeauListeContact{
         
         
@@ -206,7 +217,7 @@ display: inline
       
         }
         
-        
+        /* permet de se reperer dans le grid pendant la phase de devellopement */
         .barreDeRecherche{
         
             /* background-color: rgb(17, 0, 255); */
@@ -216,7 +227,7 @@ display: inline
         }
 
 
-
+        /* regle la taille de la barre de recherche */
         .parentDrapeauListeContact .barreDeRecherche input{
 
 
@@ -227,6 +238,7 @@ display: inline
         }
         
         
+        /* permet de faire disparaitre les drapeau lors du passage en media query sur mobile et tablette */
         .drapeau{
         
             /* background-color: rgb(234, 0, 255); */
@@ -235,6 +247,8 @@ display: inline
         }
         
         
+
+        /* permet de regler la disposition de l'icone qui represente le menu de navigation burger */
         .menuNav{
         
            /* background-color: rgb(255, 0, 0); */
@@ -248,7 +262,7 @@ display: inline
 
         
 
-
+        /* permet de cacher la liste qui se fait remplacer par l'icone menu burger */
         .parentDrapeauListeContact .menuNav ul{
 
 
@@ -261,7 +275,7 @@ display: inline
 
 
 
-
+        /*permet d'afficher le menu buger lors du passage en media query sur mobile et tablette  */
         .parentDrapeauListeContact .menuNav ul .icon{
 
             width: 30%;
@@ -270,7 +284,7 @@ display: inline
 
 
 
-        
+        /* permet de regler la disposition de l'icone contact */
         .iconContact{
         
             /* background-color: rgb(187, 255, 0); */
@@ -279,7 +293,7 @@ display: inline
         
         }
 
-
+        /* permet de regler lataille de l'icone contact */
         .parentDrapeauListeContact .iconContact img{
 
           width: 50%;
