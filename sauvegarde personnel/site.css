@@ -7,9 +7,9 @@ body{
 /* Affiche un grid DIV principale qui contient DEUX div, un a droite et un a gauche*/
 .grid{
 
-/* background-color: cadetblue; */
+background-color: cadetblue;
 
-background-color: rgb(140, 4, 29);
+
 width: 100%;
 display: grid;
 grid-template-columns: 30% 70%;
@@ -56,27 +56,10 @@ row-gap: 50px;
     /* background-color: rgb(17, 0, 255); */
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 
       
 
 }
-
-
-/* Permet de changer le style de la barre de recherche et d'arrondier les coins */
-.round {
-    width: 100%;
-    border-radius: 15px;
-    border: 1px #000 solid;
-    padding: 5px 5px 5px 25px;
-   
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-
-
 
 /* rentre dans input pour regle la taille de la barre de recherche */
 .parentDrapeauListeContact .barreDeRecherche input{
@@ -92,7 +75,7 @@ row-gap: 50px;
     /* background-color: rgb(234, 0, 255); */
    display: flex;
    justify-content: center;
-   
+    
 
 
 }
@@ -105,15 +88,6 @@ display: inline
 
 }
 
-/* permet de reduire la taille des drapeau et de le styliser les coté*/
-.drapeau ul li img{
-
-    width: 7%;
-    border-radius: 8px;
-    margin-right: 7px;
-
-}
-
 
 /* affiche le menu au centre */
 .menuNav{
@@ -121,18 +95,8 @@ display: inline
     /* background-color: rgba(182, 160, 63, 0.801); */
      display: flex;
     justify-content: center ;
-    font-family: 'Benne', serif;
-    font-size: 18px;
-    margin-top: -20px;
 
 }
-
-/* permet de changer la couleur du menu */
-.menuNav ul li  a {
-
-    color: white;
-}
-
 
 
 /* enleve les trait qui soulignent les mots dans le menu, permet d'aligné la liste  et permet d'espacé les mots*/
@@ -156,11 +120,10 @@ display: inline
 }
 
 
-/* permet d'ajouter une fonction surligner les boutons au passages de la souris et arrondi les bords pour styliser le surlignage */
+/* permet d'ajouter une fonction surligner les boutons au passages de la souris */
 .parentDrapeauListeContact .menuNav ul li a:hover {
 
     background-color: gold;
-    border-radius: 4px;
 
 }
 
@@ -181,8 +144,7 @@ display: inline
      display: flex;
      flex-direction: row;
      justify-content: flex-end;
-     margin-right: 56px;
-     
+     margin-right: 18px;
 
 }
 
@@ -230,7 +192,7 @@ display: inline
 
             
             width: 100%;
-            height: 60%;
+            height: 80%;
 
 
         }
@@ -270,8 +232,6 @@ display: inline
 
 
             width: 80px;
-            margin-left: 65px;
-            
 
 
 
@@ -286,7 +246,7 @@ display: inline
         
         }
         
-       
+        
 
         /* permet de regler la disposition de l'icone qui represente le menu de navigation burger */
         .menuNav{
@@ -315,13 +275,11 @@ display: inline
 
 
 
-        /*permet d'afficher le menu buger lors du passage en media query sur mobile et tablette  et de regle sa position */
+        /*permet d'afficher le menu buger lors du passage en media query sur mobile et tablette  */
         .parentDrapeauListeContact .menuNav ul .icon{
 
             width: 30%;
             visibility: visible;
-            margin-left: 45px;
-            margin-top: 45px;
         }
 
 
@@ -335,11 +293,10 @@ display: inline
         
         }
 
-        /* permet de regler la taille de l'icone contact et sa position */
+        /* permet de regler lataille de l'icone contact */
         .parentDrapeauListeContact .iconContact img{
 
-          width: 40px;
-          margin-left: 50px;
+          width: 50%;
           
 
         }
