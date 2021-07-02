@@ -1,5 +1,10 @@
-* {
+body
+{
     background-color: rgb(248, 227, 227);
+
+}
+* {
+    /* background-color: rgb(248, 227, 227); */
     font-family: 'Benne', serif;
     width: auto;
     height: auto;
@@ -12,7 +17,6 @@ article
 {
     text-align: center;
     top: 15%;
-    /* margin-left: 8%; */
     font-size: 20px;
     justify-content: center;
     
@@ -23,35 +27,83 @@ h1
     text-align: center;
 }
 
+.containerMenu
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 #box
 {
    
     display: flex;
     background-image: url(bon.jpg);  
-    /* flex-direction: row; */
     background-repeat: no-repeat;
-    /* flex-wrap: wrap; */
     justify-content: space-around ;
-    align-items: center;
-    /* align-content: flex-start; */
+    align-content: flex-start;
+    /* align-items: center; */
     height: 800px;
-    width: 100%;
-    /* top: 4%; */
-   
-    margin-top: 3%;
-    margin-left: 20% ;
+    width: 66%;
+    
+    margin-top: 2%;
+    
     
 }
+
+tr, th, td
+{
+    border: 0px solid black;
+    background-color:rgba(255, 255, 255, 0);
+     
+    
+}
+
+.num1 
+{
+    text-align: center;
+}
+
+.num2 
+{
+    text-align: center;
+}
+
+.num3 
+{
+    text-align: center;
+}
+
+.num4 
+{
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+    font-size: larger;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0);
+    margin-top: 2%;
+    
+}
+
+tr, td
+{
+    padding: 12px;
+    background-color:rgba(255, 255, 255, 0);
+}
  
-.element1
+/* .element1 
 {
     
     width: 150px;
     height: 100px;
     background-color: rgba(255, 255, 255, 0);
     text-align: center ;
-    /* margin-top: 7%; */
-    /* margin-left: 4%; */
+   
 
 }
 
@@ -62,8 +114,7 @@ h1
     height: 100px;
     background-color: rgba(255, 255, 255, 0);
     text-align: center ;
-    /* margin-top: 7%; */
-    /* margin-right: 6%; */
+    
 
 }
 
@@ -74,8 +125,7 @@ h1
     height: 100px;
     background-color: rgba(255, 255, 255, 0);
     text-align: center ;
-    /* margin-top: 7%; */
-
+   
 }
 
 .element4
@@ -85,9 +135,7 @@ h1
     height: 100px;
     background-color: rgba(255, 255, 255, 0);
     text-align: center ;
-    /* margin-top: 7%; */
-    /* margin-left: 0.1%; */
-    /* margin-right: 6%; */
+   
 
 }
 
@@ -97,7 +145,5 @@ p
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0); 
     align-items: baseline;
-    /* margin-top: 2px; */
-    /* font-size: 15px ; */
-
-} 
+    
+} */

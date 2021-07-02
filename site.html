@@ -14,6 +14,8 @@
 </head>
 <body>
     
+    <!-- Ici je mets le text qui vient avant le menu  -->
+
     <h1> Le restaurant Lovis Versailles  </h1>
 
         <article>
@@ -24,74 +26,96 @@ et<br/>harmonieux. Vous dégusterez des plats <br/>d’exception concocter par n
 
                 </article>
 
+
+                <!--  Ici la barre horizental -->
+
               <hr 7%; black; bold>
 
-         <div id="box"> 
 
-            <div class="element1">
+              <!--  ici j'ai mis la div parent qui s'appel coontainermenu
+                    ensuite la div enfant qui s'appelle box -->
+        <div class="containerMenu">
+
+            <div id="box"> 
+
                 
-                <p>Menu <br/></p>
+                 <thead>
 
-                    <p>
-              <br/> <br/> Petit déjeuner Express 
-               <br/> <br/>Boisson chaude au choix <br/>
-                <br/>Jus d'orange ou pamplemousse frais<br/>
-                <br/>3 mini viennoiseries au choix <br/> <br/>(croissant, pain au chocolat, pain aux raisins) 
-                <br>
-                <br>
+                        <!-- ceci est le tableau comprenant le menu -->
+                        <table>
 
-                </p>
-            
-            </div>
+                            <caption><span style="font-weight: bold; font-size: 20px; color: rgb(172, 57, 57);"> Menu </span></caption><br/>
+                               
+                            <tr>
+                                    
+                                <th><strong><span style=" color: rgb(172, 57, 57);"> Petit Déjeuner</span></strong></th>
+                                <th><strong><span style=" color: rgb(172, 57, 57);">Prix</span></strong></th>
+                                <th><strong><span style=" color: rgb(172, 57, 57);">Les plats</span></strong></th>
+                                <th><strong><span style=" color: rgb(172, 57, 57);">Prix</span></strong></th>
 
-            <div class="element2">
+                            </tr>
 
-                <p>
+                            </thead>
 
-                <br/><br/><br/><br/><br/>16€<br/>
-                <br/>19€<br/>
-                <br/>13€<br/>
-                <br/>19€<br/>
-                
-                </p>
+                            <tfoot>
 
-            </div>
+                            </tfoot>
 
+                            <tbody>
 
-            <div class="element3">
+                                <!--  Là ce sont les lignes du tableau -->
+                                
+                                <tr class="num1">
 
-                <p>
-
-                    <br/><br/><br/><br/><br/>Petit déjeuner Continenta<br/>
-                <br/>Boisson chaude au choix<br/>
-                <br/>Jus d'orange ou pamplemousse frais<br/>
-                <br/>Viennoiseries, Pain ficelle,<br/>
-                <br/>Confitures, Miel, Beurre,<br/>
-                <br/>Minestrone de fruits<br/>
-
-                </p>
-
-
-            </div>
-
-
-            <div class="element4">
-
-                <p>
-
-                    <br/><br/><br/><br/><br/>28€<br/>
-                <br/>l28€<br/>
-                <br/>l28€<br/>
-                <br/>l28€<br/>
-                <br/>l28€<br/>
-
-                </p>
-
-            </div>
-
+                                   
+                                    <td>Boisson chaude au choix</td>
+                                    <td>8€</td>
+                                    <td>Pavé de truite grillé, crevettes,</span> </td>
+                                    <td>l28€</td>
+                                
+                                </tr>
+                                
+                                <tr class="num2">
         
+                                    <td>Jus d'orange ou pamplemousse frais</td>
+                                    <td>13€</td>
+                                    <td>Filet de dorade à la plancha, vierge aux agrumes</td>
+                                    <td>80€</td>
 
-        </div>
+                                </tr>
+                                
+                                <tr class="num3">
+                                    
+                                    <td>3 mini viennoiseries au choix <br/>(croissant, pain au chocolat, pain aux raisins)</td>
+                                    <td>19€</td>
+                                    <td>Suprême de volaille fermière Rôtie, fricassée de champignon pleurote, Riso de fèves et petit pois, Sauce vin jaune</td>
+                                    <td>145€</td>
+                                
+                                </tr>
+                                
+                                <tr class="num4">
+
+                                    <td colspan="4"><em>Bon appetit !</em></td>
+                                
+                                </tr>
+                                
+                            </tbody>
+                                
+                                </table> 
+    
+
+                
+
+
+                
+
+                
+            </div>
+
+        </div>  
+    
+
+            
        
 
         
