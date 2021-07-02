@@ -1,0 +1,120 @@
+/* debut de footer */
+/* body 3 colonne */
+
+.footer{
+    background-color: #000000d0;
+    color: white;
+    height: 300px;
+    position:relative ;
+}
+/* border de body */
+.footer .footer-content{
+    border: 1px solid rgb(255, 255, 255);
+    height: 228px;
+    display: flex;
+}
+/* le colonne  de copyright*/
+.footer .footer-bottom{
+    background: #8C041D;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+
+/* logo de restaurant 1er colonm*/
+img{
+    width: 25%;
+   margin-top: -8%;
+   margin-left: -5%;
+}
+/* le phrase à cote de logo */
+p{
+    text-align: center;
+    margin-top: -22%;
+    margin-right: -15%;
+}
+/* le telephone logo et numero */
+.contact{
+    font-size: 19px;
+    color: white;
+    margin-top: 9%;
+}
+/* le email logo et email addresse */
+.contact2{
+    font-size: 19px;
+    color: white;
+    margin-top: 1%;
+}
+/* le reseau soicial */
+.socials img{
+    width: 8%;
+    margin: 3px;
+    margin-bottom: -8%;
+}
+
+
+
+/* le 2er colonm les liens */
+/* le texte les liens */
+h2{
+    text-align: center;
+    margin-top: -2%;
+    font-size: 29px;
+}
+/* le decoration de list de liens */
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    font-size: 20px;
+}
+/* le deco de list */
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* le 3em colonm ecrivez-vous */
+/* le texte ecrivez-vous */
+h3{
+    text-align: center;
+    margin-top: -2%;
+    font-size: 29px;
+}
+/* le bar de email et commentaire */
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding:25px;
+    border: 1px solid white;
+}
+/* le case de message */
+.text-input{
+    width: 50%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/* le buttom de email */
+.btn{
+    width: 28%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70%;
+    margin-top: -5%;
+}
+
+/* fin de projet */
