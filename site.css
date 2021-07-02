@@ -8,9 +8,9 @@
 }
 
 body{
-    background-color:  rgb(228, 177, 177);
+    background-color:rgb(248, 227, 227);
 }
-
+/* lui represente l'image */
 .gauche{
    
     flex-direction: row;
@@ -18,7 +18,7 @@ body{
 left: 100px;
 
 }
-
+/* lui represente le text */
 .droite{
 flex-direction: row;
     width: 50%;
@@ -31,57 +31,59 @@ flex-direction: row;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: auto;
-    justify-items: start;
+    width: 100%;
+    justify-content: center;
     height: 200px;
 background-color: rgb(71, 57, 57);
+gap: 2%;
 
 }
-
+/* lui c'est le titre du block reservation */
 #reserve{
     width: 100%;
     
     text-align: center;
     color: blanchedalmond;
 }
-
-.myform1{
-    width: 20%;
+/* du border 1 a 5 c'est les case de reservation  */
+.border1{
+    width: 10%;
     height: 20px;
-    border-radius: 20%;
+    border-radius: 20px;
   
 }
-.myform2{
-    width: 20%;
-    height: 20px;
-    border-radius: 20%;
-    
-}
-.myform3{
-    width: 20%;
+.border2{
+    width: 10%;
     height: 20px;
     border-radius:20px;
     
 }
-.myform4{
-    width: 20%;
+.border3{
+    width: 15%;
     height: 20px;
-    border-radius: 20%;
+    border-radius:20px;
     
 }
-.myform5{
-    width: 20%;
+.border4{
+    width: 15%;
     height: 20px;
-    border: radius 3px;
+    border-radius: 20PX;
+    
+}
+.border5{
+    width: 15%;
+    height: 20px;
+    border-radius:20PX;
    
 }
-
- .myform6{
-    width: 100%;
-    height: 20px;
-    border-radius:10px;
+/* lui il represente l'input valider */
+ .border6{
+    border-radius:5px;
     
-    justify-items: center;
   
  }
-
+.valide
+{
+    width: 100%;
+    text-align: center;
+}
