@@ -81,9 +81,22 @@
 <!-- fin du code de la nav bar en html -->
 
 
+<br>
+<br>
+<br>
+<br>
 
 
 
+
+<!-- INTRO -->
+
+ <!-- Ici je mets le text qui vient avant le menu  -->
+
+ <h1> Le restaurant Lovis Versailles  </h1>
+
+
+<!-- FIN INTRO -->
 
 
 
@@ -137,7 +150,7 @@
 
  <!--Ici debut insertion du slider bottom-->
 
- <div class="slider1">
+ <!-- <div class="slider1">
 
   <div class="slides1"> 
       <div class="slide1"><img src="https://www.lamontagnedebrancion.com/wp-content/uploads/2015/02/Repas-pres-de-la-cheminee-au-restaurant-de-La-Montagne-de-Brancion.jpg" alt=""></div>
@@ -146,92 +159,265 @@
       <div class="slide"><img src="https://images.radio-canada.ca/q_auto,w_1250/v1/ici-info/16x9/repas-plat-restaurant-viande-vin.jpg" alt=""></div>
   </div>
 
-</div>
+</div> -->
 
 <!--Ici fin d'insertion du slider bottom-->
 
 
 <!-- FIN SLIDER -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+<!-- ARTICLE MEME NIVEAU QUE SLIDER -->
+<hr color="black">
+
+<div class="actu">
+    <div class="gauche "> <img src = "http://foodandsens.com/wp-content/uploads/2016/03/IMG_9564-copy.jpg" width="90%"></div>
+    <div class="droite "> <h2>EVENEMENT</h2> Depuis 2021, le restaurent Lovis Versailles incarne l’esprit de lovis 14 avec sa décoration épurée avec une touche du XVIIe siècle ,tout cela pour vous offrir une ambiance feutré et harmonieux. Vous dégusterez des plats d’exception concocter  par notre chef ***  
+    </div>
+
+    
+
+
+  <div class="reservation" > 
+
+    <br>
+    <br>
+    
+        <form id="reserve"> <h2>Reserver une Table</h2></form>
+
+
+            <!-- Pour chaque input, mettre la class qu'on a nommé border qu'on appelera sur css pour faire des arrondis de coins sur les zones de text -->
+
+            
+
+                <label form id="Date"></label>
+
+                <input type="text" name="Date" class="border1" placeholder="Entrez la date">
+
+            </form> 
+
+
+            
+                <label form id="heure"></label>
+
+                <input type="text" name="heure" class="border2" placeholder="Entrez l'heure">
+
+            </form> 
+
+            
+            
+                <label form="" id="Nombres"></label>
+
+                <input type="text" name="Nombre" class="border3" placeholder="Nombre de personne">
+
+            </form>
+            
+            
+                <label form id="Coordonneés"></label>
+
+                <input type="text" name="Coordonneés" class="border4" placeholder="Coordonneés">
+
+            </form>
+
+
+
+           
+                <label form id="Membres"> </label>
+
+                <input type="text" name="Membres" class="border5" placeholder="Membres">
+
+            </form> 
+                    
+       
+
+            
+               <div class="valide"> <label form id="Valider"> </label>
+
+                <input type="submit" id="Valider" class="border6">
+            </div>
+            </form>
+        
+        </div>
+</div>
+
+<!-- FIN ARTICLE MEME NIVEAU QUE SLIDER -->
+
+
+
+
 
 
 <!-- ARTICLE APRES SLIDER -->
 
 
-<br/>
+ <!-- Ici je mets le text qui vient avant le menu  -->
 
-<hr 20px black bold;>
+ <h1> Le restaurant Lovis Versailles  </h1>
 
-<br/><div class="cont">
+ <article>
+    
+Depuis 2021, le restaurent Lovis Versailles incarne l’esprit de Lovis XIV avec sa décoration
+<br/>épurée avec une touche du XVIIe siècle ,tout cela pour vous offrir une ambiance feutré 
+et<br/>harmonieux. Vous dégusterez des plats <br/>d’exception concocter par notre chef 
 
-    <div class="info">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-       <p><em><strong> Informations pratiques</strong></em></p>
-       
-       <hr width="400px">
-       <p>+33 1 58 66 77 99</p>
-       <hr width="400px"> 
-       <p>WWW.lovisversailles.com</p>
-       <hr width="400px">
-       <p>Dates de fermeture</p>
-       <hr width="400px">
+         </article>
+
+         <br/>
+         <!--  Ici la barre horizental, les balises hr et ce qui suit permettent de mettre les lignes horizentales là -->
+
+         <hr 20px black bold;>
 
 
-    </div>
+       <!--  ici j'ai mis la div parent qui s'appel coontainermenu
+             ensuite la div enfant qui s'appelle box -->
 
-    <div class="carte">
 
-    </div>
 
-</div><br/>
-<hr 20px black bold;>
-<!-- FIN ARTICLE APRES SLIDER -->
+ <div class="containerMenu">
+
+     <div id="box"> 
+
+         
+          <thead>
+
+                 <!-- ceci est le tableau comprenant le menu -->
+                 <table>
+
+                     <caption><span style="font-weight: bold; font-size: 20px; color: rgb(172, 57, 57);"> Menu </span></caption><br/>
+                        
+                     <tr>
+                             
+                         <th><strong><span style=" color: rgb(172, 57, 57);"> Petit Déjeuner</span></strong></th>
+                         <th><strong><span style=" color: rgb(172, 57, 57);">Prix</span></strong></th>
+                         <th><strong><span style=" color: rgb(172, 57, 57);">Les plats</span></strong></th>
+                         <th><strong><span style=" color: rgb(172, 57, 57);">Prix</span></strong></th>
+
+                     </tr>
+
+                     </thead>
+
+                     <tfoot>
+
+                     </tfoot>
+
+                     <tbody>
+
+                         <!--  Là ce sont les lignes du tableau -->
+                         
+                         <tr class="num1">
+
+                            
+                             <td>Boisson chaude au choix</td>
+                             <td>8€</td>
+                             <td>Pavé de truite grillé, crevettes,</span> </td>
+                             <td>l28€</td>
+                         
+                         </tr>
+                         
+                         <tr class="num2">
+ 
+                             <td>Jus d'orange ou pamplemousse frais</td>
+                             <td>13€</td>
+                             <td>Filet de dorade à la plancha, vierge aux agrumes</td>
+                             <td>80€</td>
+
+                         </tr>
+                         
+                         <tr class="num3">
+                             
+                             <td>3 mini viennoiseries au choix <br/>(croissant, pain au chocolat, pain aux raisins)</td>
+                             <td>19€</td>
+                             <td>Suprême de volaille fermière Rôtie, fricassée de champignon pleurote, Riso de fèves et petit pois, Sauce vin jaune</td>
+                             <td>145€</td>
+                         
+                         </tr>
+                         
+                         <tr class="num4">
+
+                             <td colspan="4"><em>Bon appetit !</em></td>
+                         
+                         </tr>
+                         
+                     </tbody>
+                         
+                         </table> 
+
+
+         
+     </div>
+
+ </div>  
+
+ 
+ <br/>
+     
+         <hr 20px black bold;>
+
+ <br/>
+
+
+ <!-- Ci-dessous commence le début de la partie du body qui contient la carte  -->
+
+
+
+ <!-- la div cont c'est la zone parent -->
+
+ <div class="cont">
+
+
+ <!-- la div info c'est la zone enfant 1 contenant les infos pratiques -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+   
+
+     <!--  la div Carte c'est la zone enfant 2 contenant la carte -->
+
+     <div class="carte">
+
+     </div>
+
+ </div>
+
+ <hr 20px black bold;>
+
+ 
+
+ <!-- FIN ARTICLE APRES SLIDER -->
+
+
+ <div class="info">
+
+    <p><em><strong> Informations pratiques</strong></em></p>
+
+    
+    
+    <hr width="400px">
+    <p>+33 1 58 66 77 99</p>
+    <hr width="400px"> 
+    <p>WWW.lovisversailles.com</p>
+    <hr width="400px">
+    <p>Dates de fermeture</p>
+    <hr width="400px">
+
+
+ </div>
+
+
+
 
 <br>
 <br>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 
 <!-- 5 -->
 

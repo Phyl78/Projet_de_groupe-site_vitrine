@@ -284,7 +284,7 @@ display: inline
     background-color: brown;
 } */
 
-.slider1 .slides1 img{
+/* .slider1 .slides1 img{
     width: 400px;
     height: 250px;
 }
@@ -324,7 +324,7 @@ display: inline
         transform: translateX(0);
     }
 
-}
+} */
 /* Ici fin insertion du slider bottom */ 
 
 
@@ -332,7 +332,105 @@ display: inline
 
 
 
+/* ARTICLE MEME NIVEAU QUE SLIDER DEBUT */
 
+.actu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-items: start;
+    
+
+
+    DEPLACE LE LE CODE JE SAIS PAS POURQUOI ALORS JE LE MET EN COMMENTAIRE
+}
+
+body{
+    background-color:rgb(248, 227, 227);
+}
+
+
+/* lui represente l'image */
+.gauche{
+   
+    flex-direction: row;
+    width: 50%;
+left: 100px;
+
+}
+/* lui represente le text */
+.droite{
+flex-direction: row;
+    width: 50%;
+    font-weight: bold;
+    right: 30px;
+    
+}
+
+.reservation{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: 200px;
+background-color: rgb(71, 57, 57);
+gap: 2%;
+
+}
+/* lui c'est le titre du block reservation */
+#reserve{
+    width: 100%;
+    
+    text-align: center;
+    color: blanchedalmond;
+}
+/* du border 1 a 5 c'est les case de reservation  */
+.border1{
+    width: 10%;
+    height: 20px;
+    border-radius: 20px;
+  
+}
+.border2{
+    width: 10%;
+    height: 20px;
+    border-radius:20px;
+    
+}
+.border3{
+    width: 15%;
+    height: 20px;
+    border-radius:20px;
+    
+}
+.border4{
+    width: 15%;
+    height: 20px;
+    border-radius: 20PX;
+    
+}
+.border5{
+    width: 15%;
+    height: 20px;
+    border-radius:20PX;
+   
+}
+/* lui il represente l'input valider */
+ .border6{
+    border-radius:5px;
+    
+  
+ }
+.valide
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* FIN ARTICLE MEME NIVEAU QUE SLIDER */
 
 
 
@@ -345,6 +443,168 @@ display: inline
 
 
 /* DEBUT ARTICLE APRES SLIDER */
+
+article
+{
+    text-align: center;
+    top: 15%;
+    font-size: 20px;
+    justify-content: center;
+    
+}
+
+h1
+{
+    text-align: center;
+}
+
+.containerMenu
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#box
+{
+   
+    display: flex;
+    background-image: url(bon.jpg);  
+    background-repeat: no-repeat;
+    justify-content: space-around ;
+    align-content: flex-start;
+    /* align-items: center; */
+    height: 558px;
+    width: 66%;
+    
+    margin-top: 2%;
+    
+    
+}
+
+tr, th, td
+{
+    border: 0px solid black;
+    background-color:rgba(255, 255, 255, 0);
+     
+    
+}
+
+.num1 
+{
+    text-align: center;
+}
+
+.num2 
+{
+    text-align: center;
+}
+
+.num3 
+{
+    text-align: center;
+}
+
+.num4 
+{
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+    font-size: larger;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0);
+    margin-top: 2%;
+    
+}
+
+tr, td
+{
+    padding: 12px;
+    background-color:rgba(255, 255, 255, 0);
+}
+ 
+/* Ici commence le css de la partie du body qui contient la carte */
+
+.cont
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+}
+
+.info
+{
+    width: 40%;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.carte
+{
+    
+    background-image:url(carte.png);
+    background-repeat: no-repeat;
+    width: 45%;
+    align-content: flex-start;
+    display: flex;
+
+    
+}
+
+
+ .element1 
+{
+    
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center ;
+   
+}
+.element2
+{
+    
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center ;
+    
+}
+.element3
+{
+    
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center ;
+   
+}
+.element4
+{
+    
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center ;
+   
+}
+p
+{
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0); 
+    align-items: baseline;
+    
+}
+
 .cont
 {
     display: flex;
@@ -520,6 +780,16 @@ h3{
 
 
 /* FIN FOOTER */
+
+
+
+
+
+
+
+
+
+
 
 
 
