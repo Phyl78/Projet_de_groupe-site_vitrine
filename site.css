@@ -1,28 +1,254 @@
-/*Ici debut insertion du slider*/
 
-img{
+
+
+/* 1 */
+
+
+/* controle de la couleur de fond, la fonction opacité mise a 100% permet de montré les images et icone sur la page internet, 
+la couleur a était eclairci en manipulant directement sur  le petit carré de selection de couleur en jouant sur la barre de transparence 
+situé entre le carré et le rectangle de selection de couleur
+le code permet aussi de mettre a zero le haut det les coté de la page pour
+ permettre au grid de s'ecarté au maximum grace a padding et margin*/
+ body{
+    background-color: rgb(248, 227, 227);
+    opacity: 200%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Benne', serif;
+
+    
+}
+
+
+/* CSS DE LA NAV BAR */
+
+/* Affiche un grid DIV principale qui contient DEUX div, un a droite et un a gauche*/
+.grid{
+
+/* background-color: cadetblue; */
+
+background-color: rgb(140, 4, 29);
+width: 100%;
+display: grid;
+grid-template-columns: 30% 70%;
+grid-template-rows: 150px;
+column-gap: 10px;
+
+
+
+}
+
+/* regle la taille de l'image a partir de width dans grid */
+.logo{
+
+/* background-color: aqua; */
+width: 100%;
+
+}
+
+/* regle la taille de l'image a partir de width dans logo qui lui meme se regle a partir de width dans grid */
+.logo img{
+
+width: 40%;
+    
+}
+
+
+/* affiche le grid disposé a droite */
+.parentDrapeauListeContact{
+
+
+width: 100%;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 50px 50px;
+/* background-color: rgb(0, 255, 98); */
+column-gap: 10px;
+row-gap: 50px;
+
+
+}
+
+/* regle la dsposition de la barre de recherche */
+.barreDeRecherche{
+
+    /* background-color: rgb(17, 0, 255); */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+      
+
+}
+
+
+/* Permet de changer le style de la barre de recherche et d'arrondier les coins */
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+   
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+
+
+/* rentre dans input pour regle la taille de la barre de recherche */
+.parentDrapeauListeContact .barreDeRecherche input{
+
+
+    width: 70%;
+}
+
+
+/* regle la disposition des drapeau */
+.drapeau{
+
+    /* background-color: rgb(234, 0, 255); */
+   display: flex;
+   justify-content: center;
+   
+   
+
+
+}
+
+/* permet l'affichage des drapeaux en ligne */
+.drapeau li{
+
+list-style: none;
+display: inline
+
+}
+
+/* permet de reduire la taille des drapeau et de le styliser les coté*/
+.drapeau ul li img{
+
+    width: 22px;
+    border-radius: 8px;
+    margin-right: 7px;
+    margin-top: 8px;
+
+}
+
+
+/* affiche le menu au centre */
+.menuNav{
+
+    /* background-color: rgba(182, 160, 63, 0.801); */
+     display: flex;
+    justify-content: center ;
+    font-family: 'Benne', serif;
+    font-size: 10px;
+    margin-top: -20px;
+
+}
+
+/* permet de changer la couleur du menu */
+.menuNav ul li  a {
+
+    color: white;
+}
+
+
+
+/* enleve les trait qui soulignent les mots dans le menu, permet d'aligné la liste  et permet d'espacé les mots*/
+.parentDrapeauListeContact .menuNav ul li{
+
+
+    list-style: none;
+    display: inline;
+    margin: 5px;
+    
+
+}
+
+
+/* enleve les tirets des balises ppour chaque a */
+.parentDrapeauListeContact .menuNav ul li a{
+
+
+    text-decoration: none;
+
+}
+
+
+/* permet d'ajouter une fonction surligner les boutons au passages de la souris et arrondi les bords pour styliser le surlignage */
+.parentDrapeauListeContact .menuNav ul li a:hover {
+
+    background-color: gold;
+    border-radius: 4px;
+
+}
+
+
+/* permet de faire disparaitre le menu pour l'icone menu burger */
+.parentDrapeauListeContact .menuNav ul li a img{
+
+    visibility: hidden;
+    width: 0%;
+
+
+}
+
+/* permet de regler la position de l'icone contact */
+.iconContact{
+
+    /* background-color: rgb(187, 255, 0); */
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     margin-right: 56px;
+     
+
+}
+
+
+
+/* FIN DU CSS DE LA NAV BAR */
+
+
+
+
+
+
+
+/* 2 */
+
+/* slider  head  */
+
+/* slider  marge entre images */
+.slider .slides img{
     width: 900px;
     height: 450px;
 }
+/* placement des images dans le slider */
 .slider{
     width: 950px;
     height: 500px;
     overflow: hidden;
     margin: 150px auto;
+    margin-top: 0px;
  
 }
+/* animation des images */
 .slides{
     width: calc(900px*5);
     animation: glisse 15s infinite;
     
 }
+/* taile espacements des images */
 .slide{
     float: left; 
     margin: 17px; 
     height: 500px;
     width: 900px;
 } 
-
+/* reglages de la vitesse defillements des images */
 @keyframes glisse{
     0%{
         transform: translateX(0);
@@ -41,4 +267,751 @@ img{
     }
 
 }
-/*Ici fin insertion du slider*/
+/* //slider fin head  */
+
+
+
+/*  Débur partie css du menu */
+
+
+body
+{
+    background-color: rgb(248, 227, 227);
+
+}
+* {
+    /* background-color: rgb(248, 227, 227); */
+    font-family: 'Benne', serif;
+    width: auto;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+article
+{
+    text-align: center;
+    top: 15%;
+    font-size: 20px;
+    justify-content: center;
+    
+}
+
+h1
+{
+    text-align: center;
+    margin-top: -140px;
+    
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: -30px; 
+}
+
+.containerMenu
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#box
+{
+   
+    display: flex;
+    background-image: url(bon.png);  
+    background-repeat: no-repeat;
+    justify-content: space-around ;
+    align-content: flex-start;
+    /* align-items: center; */
+    height: 558px;
+    width: 60%;
+    
+    margin-top: 2%;
+    
+    
+}
+
+tr, th, td
+{
+    border: 0px solid black;
+    background-color:rgba(255, 255, 255, 0);
+     
+    
+}
+
+.num1 
+{
+    text-align: center;
+}
+
+.num2 
+{
+    text-align: center;
+}
+
+.num3 
+{
+    text-align: center;
+}
+
+.num4 
+{
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+    font-size: larger;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0);
+    margin-top: 2%;
+    width: 85%;
+    margin-left: -9px;
+    
+}
+
+tr, td
+{
+    padding: 12px;
+    background-color:rgba(255, 255, 255, 0);
+}
+
+
+/* Fin partie css du menu */
+
+
+
+
+
+
+/* 4 */
+
+/* DEBUT SLIDER BOTTOM */
+
+/*Ici debut insertion du slider bottom*/
+
+/* body{
+    background-color: brown;
+} */
+
+.slider1 .slides1 img{
+    width: 400px;
+    height: 250px;
+}
+.slider1{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -450px;
+
+}
+.slides1{
+    width: calc(500px*5);
+    animation: glisse 14s infinite;
+
+}
+.slide1{
+    float: left; 
+    margin: 17px; 
+    height: 300px;
+    width: 475px;
+} 
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-21%);
+    }
+    50%{
+        transform: translateX(-42%);
+    }
+    75%{
+        transform: translateX(-62%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+/* Ici fin insertion du slider bottom */ 
+
+
+
+
+/* FIN SLIDER BOTTOM */
+
+
+/* Début partie de la de cassy sur les événements */
+
+.actu{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-items: start; */
+    
+}
+
+body{
+    background-color:rgb(248, 227, 227);
+}
+
+/* lui represente l'image */
+
+
+.event
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.im1
+{
+    width: 250px;
+    height: 200px;
+    margin-top: 4%;
+    margin-left: 10px;
+}
+
+.im2
+{
+    width: 250px;
+    height: 200px;
+    margin-top: 4%;
+    margin-left: 15px;
+}
+
+.im3
+{
+    width: 250px;
+    height: 200px;
+    margin-top: 4%;
+    margin-left: 15px;
+
+}
+
+.gauche{ 
+   
+    /* flex-direction: row; */
+    display: flex;
+    width: 50%;
+    /* justify-content: flex-start; */
+    justify-content: space-between;
+    align-items:  flex-start; 
+
+}
+
+
+
+/* lui represente le text */
+.droite{
+/* flex-direction: row; */
+    width: 30%;
+    font-weight: bold;
+    /* justify-content: flex-end; */
+    margin-left: 230px;
+    margin-top: 1%;
+    
+    
+}
+
+.reservation{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: 200px;
+background-color: rgb(71, 57, 57);
+gap: 2%;
+
+}
+/* lui c'est le titre du block reservation */
+#reserve{
+    width: 100%;
+    
+    text-align: center;
+    color: blanchedalmond;
+}
+/* du border 1 a 5 c'est les case de reservation  */
+.border1{
+    width: 10%;
+    height: 20px;
+    border-radius: 20px;
+  
+}
+.border2{
+    width: 10%;
+    height: 20px;
+    border-radius:20px;
+    
+}
+.border3{
+    width: 15%;
+    height: 20px;
+    border-radius:20px;
+    
+}
+.border4{
+    width: 15%;
+    height: 20px;
+    border-radius: 20PX;
+    
+}
+.border5{
+    width: 15%;
+    height: 20px;
+    border-radius:20PX;
+   
+}
+/* lui il represente l'input valider */
+ .border6{
+    border-radius:5px;
+    width: 70px;
+    
+  
+ }
+.valide
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Fin code css de la partie de Cassy sur les événements */
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUT ARTICLE APRES SLIDER */
+
+
+.cont
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    margin-top: 6%;
+}
+
+.info
+{
+    width: 40%;
+    text-align: center;
+    margin-top: -70px;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.carte
+{
+    
+    background-image:url(https://raw.githubusercontent.com/Phyl78/Projetdegroupe-sitevitrine/branche.phyl/carte.png);
+    background-repeat: no-repeat;
+    width: 40%;
+    display: flex;
+    margin-top: -71px;
+    
+    
+
+}
+
+/* Ici début de la partie avis clients */
+
+.ens 
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.part1
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.part2 
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+
+.avis
+{
+    display: flex;
+    align-content: center;
+}
+
+.daniel
+{
+    margin-top: -50px;
+    font-size: 16px;
+    
+}
+
+
+/* FIN ARTICLE APRES SLIDER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 5 */
+
+
+/* DEBUT FOOTER */
+/* debut de footer */
+/* body 3 colonne */
+
+.footer{
+    background-color: #000000d0;
+    color: white;
+    height: 345px;
+    position:relative ;
+    margin-top: 30px;
+}
+/* border de body */
+.footer .footer-content{
+    border: 1px solid rgb(255, 255, 255);
+    height: 272px;
+    display: flex;
+}
+/* le colonne  de copyright*/
+.footer .footer-bottom{
+    background: #8C041D;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+
+/* logo de restaurant 1er colonm*/
+img{
+    /* width: 25%;
+   margin-top: -8%;
+   margin-left: -5%; */
+}
+/* le phrase à cote de logo */
+p{
+    text-align: center;
+    margin-top: -22%;
+    margin-right: -15%;
+}
+/* le telephone logo et numero */
+.contact{
+    font-size: 19px;
+    color: white;
+    margin-top: 9%;
+}
+/* le email logo et email addresse */
+.contact2{
+    font-size: 19px;
+    color: white;
+    margin-top: 1%;
+}
+/* le reseau soicial */
+.socials img{
+    width: 8%;
+    margin: 3px;
+    margin-bottom: -8%;
+}
+
+
+
+/* le 2er colonm les liens */
+/* le texte les liens */
+h2{
+    text-align: center;
+    margin-top: -2%;
+    font-size: 29px;
+}
+/* le decoration de list de liens */
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    font-size: 20px;
+}
+/* le deco de list */
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* le 3em colonm ecrivez-vous */
+/* le texte ecrivez-vous */
+h3{
+    text-align: center;
+    margin-top: -2%;
+    font-size: 29px;
+}
+/* le bar de email et commentaire */
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding:25px;
+    border: 1px solid white;
+}
+
+
+/* le case de message */
+.text-input{
+    width: 50%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/* le buttom de email */
+.btn{
+    width: 28%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 1px 7px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70%;
+    margin-top: -5%;
+}
+
+/* fin de projet */
+
+
+/* FIN FOOTER */
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* CCS DE LA NAV BAR EN MEDIA QUERY */
+
+/* permet d'afficher une version portable du site internet */
+@media screen and ( max-width:600px){
+
+
+
+
+    /* 1 */
+
+/* permet de colorer la page et de mettre a zero le haut det les coté de la page pour
+ permettre au grid de s'ecarté au maximum grace a padding et margin */
+    body{
+        background-color: rgb(248, 227, 227);
+        opacity: 200%;
+        padding: 0;
+        margin: 0;
+
+    }
+    
+
+
+    
+/* Affiche un grid DIV principale qui contient DEUX div, un a droite et un a gauche*/
+    .grid{
+
+        /* background-color: rgb(5, 3, 5); */
+        
+        
+        width: 80%;
+        
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px;
+        column-gap: 10px;
+        
+        
+        }
+        
+        /* regle la taille de l'image a partir de width dans grid */
+        .logo{
+        
+            display: flex;
+            align-items: center;
+       
+        /* background-color: aqua; */
+        
+        }
+        
+        /* regle la taille de l'image a partir de width dans logo qui lui meme se regle a partir de width dans grid */
+        .logo img{
+
+            
+            width: 80%;
+            height: 50%;
+
+
+        }
+
+
+        /* affiche le grid disposé a droite */
+        .parentDrapeauListeContact{
+        
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 132px 130px;
+        /* background-color: rgb(0, 255, 98); */
+        column-gap: 5px;
+        row-gap: 0px;
+        align-items: center;
+        
+
+        
+
+      
+        }
+        
+        /* permet de se reperer dans le grid pendant la phase de devellopement */
+        .barreDeRecherche{
+        
+            /* background-color: rgb(17, 0, 255); */
+            
+        
+        
+        }
+
+
+        /* regle la taille de la barre de recherche */
+        .parentDrapeauListeContact .barreDeRecherche input{
+
+
+            width: 80px;
+            margin-left: 10px;
+            
+
+
+
+        }
+        
+        
+        /* permet de faire disparaitre les drapeau lors du passage en media query sur mobile et tablette */
+        .drapeau{
+        
+            /* background-color: rgb(234, 0, 255); */
+            display: none;
+        
+        }
+        
+       
+
+        /* permet de regler la disposition de l'icone qui represente le menu de navigation burger */
+        .menuNav{
+        
+           /* background-color: rgb(255, 0, 0); */
+           display: flex;
+           justify-content: center;
+           
+        
+        
+        }
+
+
+        
+
+        /* permet de cacher la liste qui se fait remplacer par l'icone menu burger */
+        .parentDrapeauListeContact .menuNav ul{
+
+
+      
+       
+        visibility: hidden;
+
+        }
+
+
+
+
+        /*permet d'afficher le menu buger lors du passage en media query sur mobile et tablette  et de regle sa position */
+        .parentDrapeauListeContact .menuNav ul .icon{
+
+            width: 50%;
+            visibility: visible;
+            margin-left: 20px;
+            margin-top: 43px;
+        }
+
+
+
+        /* permet de regler la disposition de l'icone contact */
+        .iconContact{
+        
+            /* background-color: rgb(187, 255, 0); */
+            display: flex;
+            justify-content: center;
+        
+        }
+
+        /* permet de regler la taille de l'icone contact et sa position */
+        .parentDrapeauListeContact .iconContact img{
+
+          width: 50px;
+          margin-left: 45px;
+          
+
+        }
+        
+}
+
+/* FIN DU CSS DE LA NAV BAR EN MEDIA QUERY */
