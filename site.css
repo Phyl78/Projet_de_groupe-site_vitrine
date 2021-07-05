@@ -269,7 +269,24 @@ display: inline
 }
 /* //slider fin head  */
 
+@media screen  and (max-width:660px) {
 
+    .event .gauche
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .gauche
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+    
+}
 
 /*  Débur partie css du menu */
 
@@ -329,12 +346,16 @@ h2
     align-content: flex-start;
     /* align-items: center; */
     height: 558px;
-    width: 60%;
+    width: 45%;
     
     margin-top: 2%;
     
     
 }
+
+
+
+
 
 tr, th, td
 {
@@ -759,7 +780,7 @@ p{
 .socials img{
     width: 8%;
     margin: 3px;
-    margin-bottom: -8%;
+    margin-bottom: 3%;
 }
 
 
@@ -847,6 +868,7 @@ h3{
 /* CCS DE LA NAV BAR EN MEDIA QUERY */
 
 /* permet d'afficher une version portable du site internet */
+
 @media screen and ( max-width:600px){
 
 
