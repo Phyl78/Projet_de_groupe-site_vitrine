@@ -1,3 +1,18 @@
+body{
+    background-color: rgb(248, 227, 227) !important;
+    opacity: 200% !important;
+    padding: 0;
+    margin: 0;
+    font-family: 'Benne', serif !important;   
+    height:100%;
+    width: 100%; 
+}
+
+h2 , p{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
 /*mise en style navbar */
 
 
@@ -19,4 +34,66 @@
 
 .button{
     color:white !important;
+}
+
+
+/*Mise en style et place information général*/
+
+.infoPratiques{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3%;
+}
+
+.infoPratiques div{
+    margin: 3%;
+    display: grid;
+    place-items: center;
+}
+
+/*centrage des icônes*/
+
+.reseauxSociaux > span{ 
+    width: 100%;
+    height: 100%;
+}
+
+.reseauxSociaux > span > i{
+    font-size: 30px;
+    padding-inline: 3%;    
+}
+
+iframe{
+    width:100%;
+    height: 250px;
+}
+
+
+
+.covid_bar{
+    height: fit-content;
+    padding-inline: 1%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8C041D;
+    color: gold; 
+}
+
+picture{
+    width: 100%;
+}
+
+picture >img{
+    width: 100%;
+}
+
+.covid_bar > img{
+    height: 50px;
+}
+
+.covid > button{
+padding-inline: end;
 }
