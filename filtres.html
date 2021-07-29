@@ -1,0 +1,168 @@
+
+<script src="https://gist.github.com/EtienneR/92726bcd596ff5265b625f8865f8bb13.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movies - Filter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="container" style="margin-top: 1rem;">
+  <p id="count"></p>
+  <div class="row">
+
+    <section id="movies" class="col-md-8">
+      <!-- Liste des films -->
+    </section>
+
+    <ul id="types" class="col-4 list-unstyled">
+      <!-- Liste des types de films sous forme de checkboxes-->
+    </ul>
+
+  </div>
+
+<script>
+  let movies = [
+    {
+      'title': 'Interstellar',
+      'type': ['Adventure', 'Drama', 'Sci-Fi'],
+      'year': 2014
+    },
+    {
+      'title': 'Independence Day',
+      'type': ['Action', 'Adventure', 'Sci-Fi'],
+      'year': 1996
+    },
+    {
+      'title': 'Deadpool',
+      'type': ['Action', 'Adventure', 'Comedy'],
+      'year': 2016
+    },
+    {
+      'title': 'Batman Begins',
+      'type': ['Action, Adventure'],
+      'year': 2005
+    },
+    {
+      'title': 'Bad Boys',
+      'type':  ['Action', 'Comedy', 'Crime'],
+      'year': 1995
+    }
+  ];
+
+  let app = new function() {
+    // Récupération des données
+    this.movies = movies;
+
+    // Affiche les films (tous par défaut)
+    this.FetchAll = function(data) {
+      // Selection de l'élément
+      let elMovies = document.getElementById('movies');
+
+      let htmlMovies = '';
+
+      for (let i in data) {
+        htmlMovies += '<article class="card mb-3"><div class="card-header">';
+        for (let j in data[i].type) {
+          htmlMovies += '<i class="fa fa-tag" aria-hidden="true"></i> ' + data[i].type[j] + ' ';
+        }
+        htmlMovies += '</div>';
+        htmlMovies += '<div class="card-block"><h2>' + data[i].title + '</h2></div>';
+        htmlMovies += '<div class="card-footer text-muted text-center"> <i class="fa fa-calendar" aria-hidden="true"></i> ' + data[i].year + '</div>';
+        htmlMovies += '</article>';
+      }
+
+      // Affichage de l'ensemble des lignes en HTML
+      elMovies.innerHTML = htmlMovies;
+
+      // Affiche le nombre de films
+      this.Count(data);
+    };
+
+    // Retourne le nombre de films
+    this.Count = (data) => document.getElementById('count').innerHTML = data.length + ' movies';
+
+    // Retourne la liste des checkboxes
+    this.DisplayFilters = function() {
+      // Selection de l'élément
+      let elTypes = document.getElementById('types');
+      let types   = [];
+
+      // Chaque ligne (film)
+      for (let i in movies) {
+
+        // Chaque "type" dans chaque ligne (film)
+        for (let j in movies[i].type) {
+          types.push(movies[i].type[j]);
+        }
+
+      }
+
+      let uniqueTypes = types.filter( (value, index, self) => self.indexOf(value) === index );
+      let htmlTypes = '';
+
+      for (let i in uniqueTypes) {
+        htmlTypes += '<li><input type="checkbox" id="' + uniqueTypes[i] + '" name="types[]" value="' + uniqueTypes[i] + '"> <label for="' + uniqueTypes[i] + '">' + uniqueTypes[i] + '</label></li>';
+      }
+
+      elTypes.innerHTML = htmlTypes;
+    };
+
+    // Retourne les films filtrés
+    this.FilterByType = function() {
+      // Afiche les checkboxes
+      this.DisplayFilters();
+
+      let checkboxes = document.querySelectorAll('input');
+      let arrType    = [];
+      let self       = this;
+
+      for (let checkbox of checkboxes) {
+        checkbox.addEventListener('click', function() {
+          if (checkbox.checked) {
+            // Ajout dans le tableau de la valeur cochée
+            arrType.push(checkbox.value);
+          } else {
+            // Suppression dans le tableau
+            let removeItem = arrType.filter( (e) => e !== checkbox.value );
+
+            arrType = removeItem;
+          }
+          
+          if (arrType.length > 0) {
+            let i = arrType.length - 1;
+            // 1er choix
+            if (arrType.length == 1) {
+              filteredMovie = self.movies.filter( (e) => e.type.indexOf(arrType[0]) !== -1 );
+            // Autre(s) choix
+            } else {
+              filteredMovie = filteredMovie.filter(function(e) {
+                  for (let j = 0; j < i; j++) {
+                    return e.type.indexOf(arrType[i]) !== -1;
+                  }
+              });
+            }
+
+            self.FetchAll(filteredMovie);
+          } else {
+            // Reset (aucune case cochée)
+            app.FetchAll(movies);
+          }
+        });
+
+      }
+
+    };
+
+  }
+
+  // Affichage de tous les films
+  app.FetchAll(movies);
+  // Filtrage
+  app.FilterByType();
+</script>
+</body>
+</html>
