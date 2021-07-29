@@ -11,10 +11,19 @@
     color: white !important;
 }
 
-.navbar-toggler{
+.navbar-toggler-icon{
     color: white !important;
 }
 
 .button{
     color:white !important;
+}
+
+body{
+    background: #F8E3E3;
+}
+
+h1{
+   text-align: center;
+
 }
