@@ -147,7 +147,7 @@ a:hover, a:visited{
 
 
 /*mise en style formulaire*/
-form{
+.questions{
     background-color: rgb(207, 193, 193);
     padding: 3%;
 }
@@ -260,16 +260,18 @@ textarea{
       background-color: #8C041D;
   }
 
-  h1{
+  /* h1{
       margin-bottom: 50px;
       margin-top: 50px;
       color: black;
 
-  }
+  } */
 
   .bouton{
       margin-top: 55px;
   }
+
+
 
 
 /*PORTABLE*/
@@ -280,7 +282,7 @@ textarea{
 }
 
 /*TABLETTE*/
-@media only screen and (min-width: 650px) and (max-width: 1024px){
+@media only screen and (min-width: 650px) and (max-width: 990px){
     .infoPratiques{
         display: flex;
         flex-wrap: wrap;
@@ -312,14 +314,6 @@ textarea{
         justify-content: space-between;
     }
 
-    form > div{
-        width: max-content;
-    }
-
-    form > div > div{
-        width: max-content;
-    }
-
     textarea{
         height: 100px; /*comment peut on limiter un hauteur ou bien faire height responsive?*/
     }
@@ -335,7 +329,7 @@ textarea{
 }
 
 /*ORDINATEUR*/
-    @media only screen and (min-width: 1024px){
+    @media only screen and (min-width: 990px){
         .infoetmap{
             display: flex;
             flex-wrap: wrap;
@@ -365,15 +359,7 @@ iframe{
         .inpute > div{
             justify-content: space-between;
         }
-    
-        form > div{
-            width: max-content;
-        }
-    
-        form > div > div{
-            width: max-content;
-        }
-    
+
         textarea{
             height: 100px; /*comment peut on limiter un hauteur ou bien faire height responsive?*/
         }
