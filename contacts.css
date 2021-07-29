@@ -234,6 +234,11 @@ textarea{
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+  #rappel{
+    font-size: large;
+    font-weight: bold;
+    color: #8C041D;
+  }
 
   /*POPUP*/
 .success{
