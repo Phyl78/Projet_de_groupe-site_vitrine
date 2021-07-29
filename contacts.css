@@ -252,16 +252,15 @@ textarea{
     .popup_success{
         background-color: white;
         width: 350px;
-        /* height: 250px; */
+        text-align: center;
         padding: 20px;
         
     }
     
     .fermer_success{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        color: red;
+        width: 50%;
+        align-self: center;
+        color: gold;
     }
 
 /* classes pour affichage  - non-affichage */
