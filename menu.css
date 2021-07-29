@@ -21,9 +21,49 @@
 
 body{
     background: #F8E3E3;
+    font-family: 'Comfortaa', cursive;
 }
 
 h1{
    text-align: center;
+}
 
+a:link {
+    color: gold;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: gold;
+  }
+  footer{
+      margin-top: 50px;
+  }
+
+  .footercouleur{
+      background-color: #8C041D;
+  }
+
+  h1{
+      margin-bottom: 50px;
+      margin-top: 50px;
+      color: black;
+
+  }
+
+  .bouton{
+      margin-top: 55px;
+      background-color: #8C041D;
+      border-color: #8C041D;
+
+  }
+
+.btn:hover{
+    border-color:black;
+    background-color:  rgb(255, 255, 255);
 }
