@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
@@ -45,169 +45,297 @@
         </nav>
         </div>
         
-    <!--TITRE-->
-
+    <!--TITRE PAGE-->
     <h1 class="text-center p-5">NOS ÉVÈNEMENTS</h1>
 
-    <!--ESPACE JS POUR RECHERCHE / FILTRES-->
-
+    <!--BOUTONS POUR LES FILTRES JS-->
+    <div class="filterContainer text-center mb-5" id="btnContainer">
+      <div class="row">
+        <div class="col">
+          <button class="btn filterStyle border" onclick="filterSelection('all')"> Tout afficher</button>
+          <button class="btn filterStyle border" onclick="filterSelection('cuisine')"> Cuisine</button>
+          <button class="btn filterStyle border" onclick="filterSelection('oenologie')"> Œnologie</button>
+          <button class="btn filterStyle border" onclick="filterSelection('patisserie')"> Pâtisserie</button>
+          <button class="btn filterStyle border" onclick="filterSelection('junior')"> Chefs Junior</button>
+        </div>
+      </div>
+    </div>
     
-
+    <!-- CONTAINER PAGE -->
     <div class="container justify-content-md-center m-auto">
 
-        <h2 class="p-3">LA CUISINE</h2>
+      <!-- CATEGORIE CUISINE -->
+        <h2 class="p-3 filterDiv cuisine">LA <strong>CUISINE</strong></h2>
+      <!-- FIRST ROW -->
         <div class="row justify-content-md-center text-center">
 
-        <div class="card mb-3 mr-1 col-md-3">
+      <!-- BLOC 1 - ATELIER DU CHEF -->
+        <div class="card mb-3 mr-1 col-md-3 filterDiv cuisine">
+          <div class="blocimage">
+            <img src="img/photos/gourmet-salad-2157230_1920.jpeg" class="card-img-top p-2" alt="...">
+          </div>
+         
+        <div class="card-body">
+           <h4 class="card-title">ATELIER DU <strong>CHEF</strong></h4>
+           <p class="card-text">Concoctez un <strong>Menu</strong> Complet <br>(<strong>Amuse Bouche</strong> / Entrée / <br>Plat / Dessert) <br>
+            <span class="prix fw-bold">A partir de 145 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a>
+        </div>
+        </div>
+
+      <!-- BLOC 2 - ATELIER BIEN ÊTRE -->
+        <div class="card mb-3 col-md-3 offset-md-1 offset-sm-0 filterDiv cuisine">
+          <div class="blocimage">
+            <img src="img/photos/pumpkin-soup-2972858_1280.jpeg" class="card-img-top p-2" alt="...">
+         </div>
+
+         <div class="card-body">
+           <h4 class="card-title">ATELIER <strong>BIEN-ÊTRE</strong></h4>
+           <p class="card-text">Découvrez les fondamentaux de la cusisine <strong>Bio</strong>, <strong>Sans Gluten</strong> et <strong>Végétalienne.</strong><br>
+            <span class="prix fw-bold">A partir de 145 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a> 
+        </div>
+        </div>
+
+      <!-- BLOC 3 - ATELIER A DISTANCE -->
+        <div class="card mb-3 col-md-3 offset-md-1 offset-sm-0 filterDiv cuisine">
+          <div class="blocimage">
+            <img src="img/photos/coursVisio.png" class="card-img-top p-2" alt="...">
+          </div>
+         
+         <div class="card-body">
+          <h4 class="card-title">ATELIER A DISTANCE</h4>
+          <p class="card-text">En visioconférence avec un <strong>chef étoilé</strong> pour vous accompagner pas à pas dans vos recettes. <br>
+            <span class="prix fw-bold">A partir de 75 euros</span></p>
+          <a href="#" class="btn btnStyle">Plus d'infos</a>
+        </div>
+        </div>
+    </div>
+  
+  <!--CATEGORIE OENOLOGIE-->  
+    <h2 class="p-3 filterDiv oenologie">L'<strong>ŒNOLOGIE</strong></h2>
+    <!--SECOND ROW 2-->
+    <div class="row text-center justify-content-center">
+
+            <!-- BLOC 4 - ATELIER OENOLOGIE -->
+        <div class="card mb-3 col-md-4 filterDiv oenologie">
+          <div class="blocimage">
+            <img src="img/photos/coursOenologie.jpeg" class="card-img-top p-2" alt="...">
+          </div>
+         
+          <div class="card-body">
+           <h4 class="card-title">ATELIER D'<strong>ŒNOLOGIE</strong></h4>
+           <p class="card-text">En <strong>Solo</strong>, en <strong>Duo</strong>, ou en <strong>groupe</strong>,<br> venez <strong>déguster nos pépites.</strong>  <br>
+            <span class="prix fw-bold">A partir de 145 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a>
+          </div>
+          </div>
+
+      <!-- BLOC 5 - STAGE OENOLOGIE -->
+
+        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0 filterDiv oenologie">
         <div class="blocimage">
-         <img src="img/photos/gourmet-salad-2157230_1920.jpeg" class="card-img-top p-2" alt="...">
+          <img src="img/photos/stageOenologie.jpeg" class="card-img-top p-2" alt="...">
         </div>
          <div class="card-body">
-           <h5 class="card-title">ATELIER DU CHEF</h5>
-           <p class="card-text">Amuse Bouche / Entrée / Plat / Dessert <br>
-            A partir de 145 euros
-           </p>
-           <a href="#" class="btn">Plus d'infos</a>
-         </div>
+            <h4 class="card-title">STAGE D'<strong>ŒNOLOGIE</strong></h4>
+            <p class="card-text">4 jours de découverte dans un <strong>domaine viticole.</strong> <br>
+            <span class="prix fw-bold">A partir de 399 euros</span> </p>
+            <a href="#" class="btn btnStyle">Plus d'infos</a> 
+          </div>
+          </div>
+    </div>
+
+  <!-- CATEGORIE PATISSERIE -->
+    <h2 class="p-3 filterDiv patisserie">LA <strong>PÂTISSERIE</strong></h2>
+    <!--THIRD ROW-->
+    <div class="row text-center justify-content-center">
+
+      <!-- BLOC 6 - ATELIER MACARONS -->
+        <div class="card mb-3 col-md-4 filterDiv patisserie">
+          <div class="blocimage">
+            <img src="img/photos/coursMacaron.jpeg" class="card-img-top p-2" alt="...">
+          </div>
+
+         <div class="card-body">
+           <h4 class="card-title">ATELIER <strong>MACARONS</strong></h4>
+           <p class="card-text">
+          <span class="prix fw-bold">A partir de 155 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a>
+        </div>
         </div>
 
-        <div class="card mb-3 col-md-3 offset-md-1 offset-sm-0">
+      <!-- BLOC 7 - ATELIER PIECE MONTEE -->
+        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0 filterDiv patisserie">
+          <div class="blocimage">
+            <img src="img/photos/coursPieceMontee.jpeg" class="card-img-top p-2" alt="...">
+          </div>
+
+         <div class="card-body">
+           <h4 class="card-title">ATELIER <strong>PIECE MONTEE</strong></h4>
+           <p class="card-text">
+            <span class="prix fw-bold">A partir de 155 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a> 
+        </div>
+        </div>
+    </div>
+
+    <!-- FOURTH ROW -->
+    <div class="row text-center justify-content-center">
+      <!-- BLOC 8 - ATELIER VIENNOISERIES -->
+        <div class="card mb-3 col-md-4 filterDiv patisserie">
         <div class="blocimage">
-         <img src="img/photos/pumpkin-soup-2972858_1280.jpeg" class="card-img-top p-2" alt="...">
-         </div>
+          <img src="img/photos/coursViennoiserie.jpeg" class="card-img-top p-2" alt="...">
+        </div>
+
          <div class="card-body">
-           <h5 class="card-title">ATELIER BIEN-ÊTRE</h5>
-           <p class="card-text">Bio / Sans Gluten / Végétalien / Sans Lactose / Cru <br>
-            A partir de 145 euros </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a> 
+           <h4 class="card-title">ATELIER <strong>VIENNOISERIES</strong></h4>
+           <p class="card-text">
+            <span class="prix fw-bold">A partir de 99 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a>
         </div>
         </div>
 
-        <div class="card mb-3 col-md-3 offset-md-1 offset-sm-0">
+      <!-- BLOC 9 - ATELIER VEGAN -->
+        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0 filterDiv patisserie">
+          <div class="blocimage">
+            <img src="img/photos/coursVegan.jpeg" class="card-img-top p-2" alt="...">
+          </div>
+
+         <div class="card-body">
+           <h4 class="card-title">ATELIER <strong>BIEN-ÊTRE</strong></h4>
+           <p class="card-text">Les fondamentaux de la <strong>pâtisserie végétalienne</strong><br>
+            <span class="prix fw-bold">A partir de 99 euros</span> </p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a> 
+        </div>
+        </div>
+    </div>
+
+<!-- CATEGORIE ENFANTS -->
+    <h2 class="p-2 filterDiv junior"><strong>CHEFS JUNIOR</strong></h2>
+    <h3 class="p-2 filterDiv junior infoPratique">En période de <strong>vacances scolaires (zone C)</strong> uniquement</h3>
+  <!--FIFTH ROW -->
+    <div class="row text-center justify-content-center">
+
+      <!-- BLOC 10 - ENFANTS 6 A 9 ANS -->
+      <div class="card mb-3 col-md-4 filterDiv junior">
         <div class="blocimage">
-         <img src="img/photos/Screen Shot 2021-07-28 at 16.04.42.png" class="card-img-top p-2" alt="...">
+          <img src="img/photos/coursPatisserieEnfants.jpeg" class="card-img-top p-2" alt="...">
         </div>
-         <div class="card-body">
-           <h5 class="card-title">ATELIER A DISTANCE</h5>
-           <p class="card-text">En visioconférence avec un <strong>chef étoilé</strong> pour vous accompagner pas à pas dans vos recettes. <br>
-            A partir de 75 euros</p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a>
-         </div>
-        </div>
-    </div>
-    
-    <h2 class="p-3">L'<strong>ŒNOLOGIE</strong></h2>
-    <!--ROW 2-->
-    
-    <div class="row text-center justify-content-center">
-
-        <div class="card mb-3 col-md-4">
-         <img src="img/photos/cours oenologie.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">ATELIER D'<strong>ŒNOLOGIE</strong></h5>
-           <p class="card-text">En <strong>Solo</strong>, en <strong>Duo</strong>, ou en <strong>groupe</strong>, venez <strong>déguster nos pépites.</strong>  <br>
-            A partir de 145 euros
-           </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a>
-         </div>
-        </div>
-
-        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0">
-         <img src="img/photos/stage oenologie.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">STAGE D'<strong>ŒNOLOGIE</strong></h5>
-           <p class="card-text">4 jours de découverte dans un <strong>domaine viticole.</strong> <br>
-            A partir de 145 euros </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a> 
+         
+        <div class="card-body">
+           <h4 class="card-title">CHEFS JUNIORS</h4>
+           <p class="card-text"><strong>De 6 à 9 ans</strong><br>
+            Une journée où l'<strong>enfant</strong> sera au cœur de l'<strong>apprentissage</strong> des <strong>gestes de base de technique de pâtisserie</strong>.
+            <br><span class="prix fw-bold">A partir de 79 euros</span></p>
+           <a href="#" class="btn btnStyle">Plus d'infos</a>
         </div>
         </div>
-    </div>
 
-    <h2 class="p-3">LA PÂTISSERIE</h2>
-    <!--ROW 3-->
-
-    <div class="row text-center justify-content-center">
-
-        <div class="card mb-3 col-md-4">
-         <img src="img/photos/cours macaron.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">ATELIER MACARONS</h5>
-           <p class="card-text">
-            A partir de 155 euros
-           </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a>
-         </div>
-        </div>
-
-        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0">
-         <img src="img/photos/cours piece montée.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">ATELIER PIECE MONTEE</h5>
-           <p class="card-text">
-            A partir de 155 euros </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a> 
-        </div>
-        </div>
-    </div>
-
-    <div class="row text-center justify-content-center">
-
-        <div class="card mb-3 col-md-4">
-         <img src="img/photos/cours viennoiserie.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">ATELIER VIENNOISERIES</h5>
-           <p class="card-text">
-            A partir de 99 euros
-           </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a>
-         </div>
-        </div>
-
-        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0">
-         <img src="img/photos/cours vegan.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">ATELIER BIEN-ÊTRE</h5>
-           <p class="card-text">Les fondamentaux de la pâtisserie végétalienne<br>
-            A partir de 99 euros </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a> 
-        </div>
-        </div>
-    </div>
-
-    <h2 class="p-2">CHEFS JUNIOR</h2>
-    <div class="row text-center justify-content-center">
-
-        <div class="card mb-3 col-md-4">
-         <img src="img/photos/cours patisserie enfants.jpeg" class="card-img-top p-2" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">CHEFS JUNIORS</h5>
-           <p class="card-text">De 6 à 9 ans <br>
-            Une journée où l'enfant sera au cœur de l'apprentissage des gestes de base de technique de pâtisserie.
-            A partir de 79 euros
-           </p>
-           <a href="#" class="btn btn-primary">Plus d'infos</a>
-         </div>
-        </div>
-
-        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0">
-            <img src="img/photos/cours patisserie enfants 6-9.jpeg" class="card-img-top p-2" alt="...">
+      <!-- BLOC 11 - ENFANTS 10 A 14 ANS -->
+        <div class="card mb-3 col-md-4 offset-md-1 offset-sm-0 filterDiv junior">
+          <div class="blocimage">
+            <img src="img/photos/coursPatisserieEnfants10.jpeg" class="card-img-top p-2" alt="...">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">CHEFS JUNIORS</h5>
-              <p class="card-text">De 6 à 9 ans <br>
-               Une journée où l'enfant sera au cœur de l'apprentissage des gestes de base de technique de pâtisserie.
-               A partir de 79 euros
+              <h4 class="card-title">CHEFS JUNIORS</h4>
+              <p class="card-text"><strong>De 10 à 14 ans</strong><br>
+                Une journée où l'<strong>enfant</strong> sera au cœur de l'<strong>apprentissage</strong> des <strong>gestes de base de technique de pâtisserie</strong>.
+                <br><span class="prix fw-bold">A partir de 79 euros</span>
               </p>
-              <a href="#" class="btn btn-primary">Plus d'infos</a>
+              <a href="#" class="btn btnStyle">Plus d'infos</a>
             </div>
            </div>
     </div>
 
+<!--FOOTER-->
+
+<footer class="text-center text-white footercouleur">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Inscrivez vous à notre newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Adresse Email</label>
+            </div>
+          </div>
+          <!--Grid column-->
+<!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Inscription
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+      </div>
+    </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    ©️ 2021 Copyright:
+    <a class="text-white" href="site.html">LovisVersailles.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 
-
-    <!--Script CDN Bootstrap-->
+</div>
+<!-- Script Icons -->
+<script src="https://kit.fontawesome.com/681af2627b.js" crossorigin="anonymous"></script>
+<!--Script CDN Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!--JAVASCRIPT-->
+<!--JAVASCRIPT-->
 <script src="evenements.js"></script>
 </body>
 </html>
