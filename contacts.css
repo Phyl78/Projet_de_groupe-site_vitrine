@@ -3,7 +3,7 @@ body{
     opacity: 200% !important;
     padding: 0;
     margin: 0;
-    font-family: 'Benne', serif !important;   
+    font-family: serif !important;   
     height:100%;
     width: 100%; 
 }
@@ -178,6 +178,99 @@ form{
     background-color: #8C041D;
     border-color: #8C041D;
 }
+
+textarea{
+    height: 100px; /*ici il est responsive*/
+}
+
+
+/* mise en style back-to-top bouton*/
+#backtotop {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.623); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #backtotop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+  /*POPUP*/
+.success{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(58, 56, 56, 0.411);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 500;
+    }
+    
+    .popup_success{
+        background-color: white;
+        width: 350px;
+        /* height: 250px; */
+        padding: 20px;
+        
+    }
+    
+    .fermer_success{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: red;
+    }
+
+/* classes pour affichage  - non-affichage */
+
+.none{
+    display: none;
+}
+
+.block{
+    display: flex; /*ici j'ai mis flex au place de 'block' pour centrer le popup*/
+}
+
+
+/*intégration footer*/
+
+
+  /* mouse over link */
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+  footer{
+      margin-top: 50px;
+  }
+
+  .footercouleur{
+      background-color: #8C041D;
+  }
+
+  h1{
+      margin-bottom: 50px;
+      margin-top: 50px;
+      color: black;
+
+  }
+
+  .bouton{
+      margin-top: 55px;
+  }
+
 
 /*PORTABLE*/
 @media only screen and (max-width: 600px){
