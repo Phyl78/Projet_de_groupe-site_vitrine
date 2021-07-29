@@ -87,8 +87,6 @@ iframe{
     height: 250px;
 }
 
-/*Comment ajouter la bordure pour l'inframe?*/
-
 .map{
     border-width: 2px;
     border-color: #8C041D;
@@ -158,10 +156,6 @@ picture > img{
     color: gold;
     border: #8C041D;
 }
-/* 
-.active{
-    border: #8C041D
-} */
 
 a:hover {
     color:gold !important;
@@ -174,13 +168,6 @@ a, a:focus, a:visited, a:hover{
     color: gold;
     text-decoration: none;
 }
-
-/*Comment appliquer les styles differents pour a seulement, et pas avec les pseudoclasses????*/
-
-
-
-
-
 
 /*mise en style formulaire*/
 .questions{
@@ -292,27 +279,32 @@ textarea{
 
 
   /* mouse over link */
-  a:hover {
+a:hover {
     color: rgb(255, 255, 255);
-  }
-  footer{
-      margin-top: 50px;
-  }
+}
 
-  .footercouleur{
-      background-color: #8C041D;
-  }
+footer{
+    margin-top: 50px;
+}
 
-  .bouton{
-      margin-top: 55px;
-  }
+.footercouleur{
+    background-color: #8C041D;
+}
 
+.bouton{
+    margin-top: 55px;
+}
 
-  /*effacement d'une bordure de Bootstrap qui apparaît une fois bouton est appuié*/
-  .btn:focus, .btn:active {
+.col-auto > button{
+    background-color: #3b010c;
+    color: gold;
+}
+
+/*effacement d'une bordure de Bootstrap qui apparaît une fois bouton est appuié*/
+.btn:focus, .btn:active {
     outline: #8C041D !important;
     box-shadow: #8C041D 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
-  }
+}
 
 
 /*PORTABLE*/
@@ -328,19 +320,27 @@ textarea{
 
 /*TABLETTE*/
 @media only screen and (min-width: 650px) and (max-width: 990px){
+    h1{
+        text-align: left;
+    }
+    
     .infoPratiques{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width: auto;
-        height: 50vh;
+        height: 320px;
+        justify-content: space-between;
     }
     
     .addresse{
         order: 2;
     }
 
-    .horaires{
+    .reseauxSociaux, .contacts{
+    order: 1;
+    }
+    .fermetureEte , .horaires{
         order: 6;
     }
 
@@ -378,51 +378,56 @@ textarea{
 }
 
 /*ORDINATEUR*/
-    @media only screen and (min-width: 990px){
-        .infoetmap{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            width: 100%;
-            height: 500px;
-            
-        }
-.infoPratiques{
-    display: block;
-    margin: 0;
-}
+@media only screen and (min-width: 990px){
+    h1{
+        text-align: left;
+    }
 
-iframe{
-    height: 460px;
-}
+    .infoetmap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 440px;
+        justify-content: space-between;
+    }
 
-        .inputs{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 100%;
-            height: 230px;
-        }
+    .infoPratiques{
+        display: block;
+        margin: 0;
+    }
+
+    iframe{
+        height: 370px;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 230px;
+    }
     
-        .inpute > div{
-            justify-content: space-between;
-        }
+    .inpute > div{
+        justify-content: space-between;
+    }
 
-        textarea{
-            height: 100px; /*comment peut on limiter un hauteur ou bien faire height responsive?*/
-        }
+    textarea{
+        height: 100px; /*comment peut on limiter un hauteur ou bien faire height responsive?*/
+    }
     
-        /* mise en taille petite textes*/
-        .references{
-            width: auto;
-        }
+    /* mise en taille petite textes*/
+    .references{
+        width: auto;
+    }
     
-        .references > div, p{
-            width: 100%;
-        }
+    .references > div, p{
+        width: 100%;
+    }
 
-        .mini{
-            display: none;
-        }
+    .mini{
+        display: none;
+    }
 }
