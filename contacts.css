@@ -8,12 +8,23 @@ body{
     width: 100%; 
 }
 
-h2, h1, p{
+
+
+h2, p{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     text-align: center;
 }
 
+h2{
+    font-size: x-large;
+}
+
+h1{
+    margin: 3%;
+    text-align: center;
+    font-size: xx-large;
+}
 strong {
     font-weight: normal;
 }
@@ -82,6 +93,11 @@ iframe{
     border-width: 2px;
     border-color: #8C041D;
     height: auto;
+    margin: 3%;
+}
+
+button{
+    margin: 3%;
 }
 
 .covid_bar{
@@ -127,24 +143,40 @@ picture > img{
     border-color:black;
 }
 
+.btn-primary{
+    color: gold;
+}
 .btn-primary:hover{
     border-color:black;
     background-color:  white;
     color: gold;
 }
 
+.btn-primary:focus{  /*mise en style button déjà appuyé*/
+    border-color:black;
+    background-color:  white;
+    color: gold;
+    border: #8C041D;
+}
+/* 
+.active{
+    border: #8C041D
+} */
 
-a{
-    color: white;
+a:hover {
+    color:gold !important;
+    background-color: white;
+    text-decoration: gold;
+}
+
+
+a, a:focus, a:visited, a:hover{
+    color: gold;
     text-decoration: none;
 }
 
 /*Comment appliquer les styles differents pour a seulement, et pas avec les pseudoclasses????*/
 
-a:hover, a:visited{
-    color:gold;
-    background-color:  white;
-}
 
 
 
@@ -160,6 +192,7 @@ a:hover, a:visited{
     font-size: xx-small;
     text-align: left;
     font-style: italic;
+    width: auto;
 }
 
 .etoile{
@@ -173,7 +206,7 @@ a:hover, a:visited{
     flex-direction: row-reverse;
 }
 
-.envoyer > button{
+.button-page, .btn, .btn-primary{
     background-color: #8C041D;
     border-color: #8C041D;
 }
@@ -185,7 +218,13 @@ a:hover, a:visited{
 
 textarea{
     height: 100px; /*ici il est responsive*/
-}
+    resize: none;
+    }
+
+    input:active, input:focus, textarea:active, textarea:focus{
+        border-color: black;
+        box-shadow: black 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+    }
 
 
 /* mise en style back-to-top bouton*/
@@ -269,6 +308,11 @@ textarea{
   }
 
 
+  /*effacement d'une bordure de Bootstrap qui apparaît une fois bouton est appuié*/
+  .btn:focus, .btn:active {
+    outline: #8C041D !important;
+    box-shadow: #8C041D 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+  }
 
 
 /*PORTABLE*/
