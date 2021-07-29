@@ -3,7 +3,7 @@ body{
     opacity: 200% !important;
     padding: 0;
     margin: 0;
-    font-family: serif !important;   
+    font-family: 'comfortaa', serif;
     height:100%;
     width: 100%; 
 }
@@ -12,6 +12,10 @@ h2, h1, p{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     text-align: center;
+}
+
+strong {
+    font-weight: normal;
 }
 
 /*mise en style navbar */
@@ -260,13 +264,6 @@ textarea{
       background-color: #8C041D;
   }
 
-  /* h1{
-      margin-bottom: 50px;
-      margin-top: 50px;
-      color: black;
-
-  } */
-
   .bouton{
       margin-top: 55px;
   }
@@ -278,6 +275,10 @@ textarea{
 @media only screen and (max-width: 600px){
     .infoPratiques{
         display: flex;
+    }
+
+    .maxi{
+        display: none;
     }
 }
 
@@ -326,6 +327,10 @@ textarea{
     .references > div, p{
         width: 100%;
     }
+
+    .mini{
+        display: none;
+    }
 }
 
 /*ORDINATEUR*/
@@ -371,5 +376,9 @@ iframe{
     
         .references > div, p{
             width: 100%;
+        }
+
+        .mini{
+            display: none;
         }
 }
