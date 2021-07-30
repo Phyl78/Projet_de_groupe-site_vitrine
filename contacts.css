@@ -1,0 +1,437 @@
+body{
+    background-color: rgb(248, 227, 227) !important;
+    opacity: 200% !important;
+    padding: 0;
+    margin: 0;
+    font-family: 'comfortaa', serif;
+    height:100%;
+    width: 100%; 
+}
+
+
+
+h2, p{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+h2{
+    font-size: x-large;
+}
+
+h1{
+    margin: 3%;
+    text-align: center;
+    font-size: xx-large;
+}
+strong {
+    font-weight: normal;
+}
+
+/*mise en style navbar */
+
+
+.navbar-brand:hover, .nav-link:hover {
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    
+    background-color: #8C041D;
+}
+.navbar-couleur{
+    color: white !important;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.button{
+    color:white;
+}
+
+
+/*Mise en style et place information général*/
+
+.infoPratiques{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3%;
+}
+
+.infoPratiques div{
+    margin: 3%;
+    display: grid;
+    place-items: center;
+}
+
+/*centrage des icônes*/
+
+.reseauxSociaux > span{ 
+    width: 100%;
+    height: 30px;
+}
+
+.reseauxSociaux > span > i{
+    font-size: 30px;
+    padding-inline: 3%;    
+}
+
+ /*mise en taille le map*/
+iframe{
+    width: 100%;
+    height: 250px;
+}
+
+.map{
+    border-width: 2px;
+    border-color: #8C041D;
+    height: auto;
+    margin: 3%;
+}
+
+button{
+    margin: 3%;
+}
+
+.covid_bar{
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8C041D;
+    color: gold; 
+}
+
+.covid > p{
+    padding: 3%;
+    text-align: center;
+}
+
+picture{
+    width: 100%;
+}
+
+picture > img{
+    width: 100%;
+}
+
+.covid_bar > img{
+    height: 50px;
+}
+
+/*mise en place et style lien gouvernement*/
+
+.gouvr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+.gouvr > p{
+    background-color: #8C041D;
+    padding: 1.5%;
+    width: fit-content;
+    border-radius: .25rem;
+    border-color:black;
+}
+
+.btn-primary{
+    color: gold;
+}
+.btn-primary:hover{
+    border-color:black;
+    background-color:  white;
+    color: gold;
+}
+
+.btn-primary:focus{  /*mise en style button déjà appuyé*/
+    border-color:black;
+    background-color:  white;
+    color: gold;
+    border: #8C041D;
+}
+
+a:hover {
+    color:gold !important;
+    background-color: white;
+    text-decoration: gold;
+}
+
+
+a, a:focus, a:visited, a:hover{
+    color: gold;
+    text-decoration: none;
+}
+
+/*mise en style formulaire*/
+.questions{
+    background-color: rgb(207, 193, 193);
+    padding: 3%;
+}
+
+.small{
+    font-size: xx-small;
+    text-align: left;
+    font-style: italic;
+    width: auto;
+}
+
+.etoile{
+    color: #8C041D;
+    vertical-align: super;
+    font-size: small;
+}
+
+.envoyer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button-page, .btn, .btn-primary{
+    background-color: #8C041D;
+    border-color: #8C041D;
+}
+
+.form-check-input:checked{
+    background-color: #8C041D;
+    border-color: #8C041D;
+}
+
+textarea{
+    height: 100px; /*ici il est responsive*/
+    resize: none;
+    }
+
+    input:active, input:focus, textarea:active, textarea:focus{
+        border-color: black;
+        box-shadow: black 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+    }
+
+
+/* mise en style back-to-top bouton*/
+#backtotop {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.623); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #backtotop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  #rappel{
+    font-size: large;
+    font-weight: bold;
+    color: #8C041D;
+  }
+
+  /*POPUP*/
+.success{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(58, 56, 56, 0.411);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 500;
+    }
+    
+    .popup_success{
+        background-color: white;
+        width: 350px;
+        text-align: center;
+        padding: 20px;
+        
+    }
+    
+    .fermer_success{
+        width: 50%;
+        align-self: center;
+        color: gold;
+    }
+
+/* classes pour affichage  - non-affichage */
+
+.none{
+    display: none;
+}
+
+.block{
+    display: flex; /*ici j'ai mis flex au place de 'block' pour centrer le popup*/
+}
+
+
+/*intégration footer*/
+
+
+  /* mouse over link */
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.footercouleur{
+    background-color: #8C041D;
+}
+
+.bouton{
+    margin-top: 55px;
+}
+
+.col-auto > button{
+    background-color: #3b010c;
+    color: gold;
+}
+
+/*effacement d'une bordure de Bootstrap qui apparaît une fois bouton est appuié*/
+.btn:focus, .btn:active {
+    outline: #8C041D !important;
+    box-shadow: #8C041D 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+}
+
+
+/*PORTABLE*/
+@media only screen and (max-width: 600px){
+    .infoPratiques{
+        display: flex;
+    }
+
+    .maxi{
+        display: none;
+    }
+}
+
+/*TABLETTE*/
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    h1{
+        text-align: left;
+    }
+    
+    .infoPratiques{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: auto;
+        height: 320px;
+        justify-content: space-between;
+    }
+    
+    .addresse{
+        order: 2;
+    }
+
+    .reseauxSociaux, .contacts{
+    order: 1;
+    }
+    .fermetureEte , .horaires{
+        order: 6;
+    }
+
+
+    /*mise en place form*/
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 230px;
+    }
+
+    .inpute > div{
+        justify-content: space-between;
+    }
+
+    textarea{
+        height: 100px; /*comment peut on limiter un hauteur ou bien faire height responsive?*/
+    }
+
+    /* mise en taille petite textes*/
+    .references{
+        width: auto;
+    }
+
+    .references > div, p{
+        width: 100%;
+    }
+
+    .mini{
+        display: none;
+    }
+}
+
+/*ORDINATEUR*/
+@media only screen and (min-width: 990px){
+    h1{
+        text-align: left;
+    }
+
+    .infoetmap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 440px;
+        justify-content: space-between;
+    }
+
+    .infoPratiques{
+        display: block;
+        margin: 0;
+    }
+
+    iframe{
+        height: 370px;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 230px;
+    }
+    
+    .inpute > div{
+        justify-content: space-between;
+    }
+
+    textarea{
+        height: 100px; /*comment peut on limiter un hauteur ou bien faire height responsive?*/
+    }
+    
+    /* mise en taille petite textes*/
+    .references{
+        width: auto;
+    }
+    
+    .references > div, p{
+        width: 100%;
+    }
+
+    .mini{
+        display: none;
+    }
+}
