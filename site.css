@@ -33,6 +33,7 @@ display: grid;
 grid-template-columns: 30% 70%;
 grid-template-rows: 150px;
 column-gap: 10px;
+margin: auto;
 
 
 
@@ -42,7 +43,7 @@ column-gap: 10px;
 .logo{
 
 /* background-color: aqua; */
-width: 100%;
+width: 80%;
 
 }
 
@@ -58,7 +59,7 @@ width: 40%;
 .parentDrapeauListeContact{
 
 
-width: 100%;
+width: 97%;
 display: grid;
 grid-template-columns: 50% 50%;
 grid-template-rows: 50px 50px;
@@ -153,6 +154,7 @@ display: inline
 .menuNav ul li  a {
 
     color: white;
+    
     
 }
 
