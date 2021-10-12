@@ -1,0 +1,20 @@
+
+.navbar-brand:hover, .nav-link:hover {
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    
+    background-color: #8C041D;
+}
+.navbar-couleur{
+    color: white !important;
+}
+
+.navbar-toggler{
+    color: white !important;
+}
+
+.button{
+    color:white !important;
+}
