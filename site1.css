@@ -1,0 +1,46 @@
+/*Ici debut insertion du slider bottom*/
+body{
+    background-color: brown;
+}
+img{
+    width: 400px;
+    height: 250px;
+}
+.slider{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -100px;
+ 
+}
+.slides{
+    width: calc(500px*5);
+    animation: glisse 14s infinite;
+    
+}
+.slide{
+    float: left; 
+    margin: 17px; 
+    height: 300px;
+    width: 475px;
+} 
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-21%);
+    }
+    50%{
+        transform: translateX(-42%);
+    }
+    75%{
+        transform: translateX(-62%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+/* Ici fin insertion du slider bottom */
